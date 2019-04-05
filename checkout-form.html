@@ -5,72 +5,185 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.min.css">
 
     <title>Botstrap Practice</title>
 </head>
 
 <body class="bg-light">
-    <div class="container mt-5">
+    <div class="container">
         <div class="row">
-            <div class="col-9 mx-auto ">
-                <div class="col-12 text-center">
-                    <div class="logo mx-auto mb-3">
-
-                    </div>
-                    <h1>Checkout form</h1>
-                    Below is an example form built entirely with Bootstrap`s form controls. Each required form group has
-                    a
-                    validation state that can be triggered by attempting to submit the form without compleiting it.
-                </div>
-                <div class=" form-group col-8">
-                    <h5>Billing address</h5>
-                    <label for="first-name" class="col-5 p-0 mx-0">
-                        First name
-
-                    </label>
-                    <label for="last-name" class="col-5 p-0 mx-0">
-                        Last name
-
-                    </label>
-                    <div class="col-5 px-0 mx-0 input-field">
-                        <input type="text" class="col-12 px-0 mx-0  form-control form-control-sm" name="first-name"
-                            id="first-name">
-                    </div>
-                    <div class="col-5 px-0 mx-0 input-field">
-                        <input type="text" class="col-12 px-0 mx-0  form-control form-control-sm" name="last-name"
-                            id="last-name">
-                    </div>
-
-
-
-
-                    <label for="username" class="col-10 px-0">Username
-                        <!-- <div class="badge badge-light col-1">@</div> -->
-                        <input type="text" class="col-12 input-field form-control form-control-sm" name="username"
-                            id="username">
-                    </label>
-
-                </div>
-                <div class="col-4">
-
-                </div>
+            <div class="col-12 text-center">
+                <div class="logo mx-auto m-3"></div>
+                <h1>Checkout form</h1>
+                <p>
+                    Below is an example form built entirely with Bootstrap`s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without compleiting it.
+                </p>
             </div>
         </div>
+
+        
+        <div class="row">
+            <div class="col-8">
+                <div class="row">
+                    <div class="h3 col-12">Billing address</div>
+                    <div class="col-6 input-group">
+                        <label for="first-name" class="col-12 pl-0 pt-3">First name</label>
+                        <input type="text" class="col-12" name="first-name" id="first-name">
+                    </div>
+
+                    <div class="col-6 input-group">
+                        <label for="last-name" class="col-12 pl-0 pt-3">Last name</label>
+                        <input type="text" class="col-12" name="last-name" id="last-name">
+                    </div>
+
+                    <div class="col-12 input-group">
+                        <label for="username" class="col-12 pl-0 pt-3">Username</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                            </div>
+                            <input type="text" class="col" name="username" id="username" placeholder="test" aria-label="Имя пользователя" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+
+                    <div class="col-12 input-group">
+                        <label for="email" class="col-12 pl-0 pt-3">Email</label>
+                        <input type="email" class="col-12" name="email" id="Email" placeholder="test">
+                    </div>
+
+                    <div class="col-12 input-group">
+                        <label for="address" class="col-12 pl-0 pt-3">address</label>
+                        <input type="text" class="col-12" name="address" id="address" placeholder="test">
+                    </div>
+
+                    <div class="col-12 input-group">
+                        <label for="address2" class="col-12 pl-0 pt-3">address2</label>
+                        <input type="text" class="col-12" name="address2" id="address2" placeholder="test">
+                    </div>
+
+                    <div class="col-5 input-group">
+                        <label for="Country" class="col-12 pl-0 pt-3">Country</label>
+                        <select name="Country" id="Country" class="w-100">
+                            <option disabled selected>Choose...</option>
+                            <option value="">UKR</option>
+                            <option value="">RUS</option>
+                            <option value="">EU</option>
+                        </select>
+                    </div>
+
+                    <div class="col-4 input-group">
+                        <label for="State" class="col-12 pl-0 pt-3">State</label>
+                        <select name="State" id="State" class="w-100">
+                            <option disabled selected>Choose...</option>
+                            <option value="">UKR</option>
+                            <option value="">RUS</option>
+                            <option value="">EU</option>
+                        </select>
+                    </div>
+
+                    <div class="col-3 input-group">
+                        <label for="zip" class="col-12 pl-0 pt-3">zip</label>
+                        <input type="number" class="col-12" name="zip" id="zip">
+                    </div>
+
+                    <div class="col-12 mt-3">
+                        <hr class="my-4">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input pl-0 pt-3" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Lorem ipsum dolor sit amet.</label>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 mt-3">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input pl-0 pt-3" id="exampleCheck2">
+                            <label class="form-check-label" for="exampleCheck2">Lorem ipsum dolor sit amet.</label>
+                        </div>
+                        <hr class="my-4">
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="h3">You Cart</div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-9">
+                                <div class="wrap-main">
+                                    <div class="col-12 wrap">Product name</div>
+                                    <div class="col-12 wrap">brif</div>
+                                </div>  
+                            </div>
+                            <div class="col-3">$12</div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-9">
+                                <div class="wrap-main">
+                                    <div class="col-12 wrap">Product name</div>
+                                    <div class="col-12 wrap">brif</div>
+                                </div>  
+                            </div>
+                            <div class="col-3">$12</div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-9">
+                                <div class="wrap-main">
+                                    <div class="col-12 wrap">Product name</div>
+                                    <div class="col-12 wrap">brif</div>
+                                </div>  
+                            </div>
+                            <div class="col-3">$12</div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-9">
+                                <div class="wrap-main">
+                                    <div class="col-12 wrap">Product name</div>
+                                    <div class="col-12 wrap">brif</div>
+                                </div>  
+                            </div>
+                            <div class="col-3">$12</div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-9">
+                                <div class="wrap-main">
+                                    <div class="col-12 wrap">Product name</div>
+                                    <div class="col-12 wrap">brif</div>
+                                </div>  
+                            </div>
+                            <div class="col-3">$12</div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-9">
+                                <div class="wrap-main">
+                                    <div class="col-12 wrap">Product name</div>
+                                    <div class="col-12 wrap">brif</div>
+                                </div>  
+                            </div>
+                            <div class="col-3">$12</div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div> 
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
